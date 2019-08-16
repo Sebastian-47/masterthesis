@@ -1,0 +1,27 @@
+This project is build with CMake
+
+Dependencies:
+ 1.) fftw
+
+1. Change the header in the following files corresponding to example.cc 
+  /splitstep/main.cc 
+  /splitstep/arithmetics.cc 
+  /splitstep/arithmetics.h
+  /splitstep/wavefunction/wavefunction.cc
+  /splitstep/wavefunction/wavefunction.h
+  /matrix/matrix.cc
+  /matrix/matrix.h
+  
+2. Complete the installation pathes in CMakeLists_splitstep.txt and CMakeLists_wavefunction.txt
+
+3. Replace the /splitstep/CMakeLists.txt with CMakeLists_splitstep.txt (don´t forget to rename CMakeLists_splitstep.txt to CMakeLists.txt)
+
+4. Replace the /splitstep/wavefunction/CMakeLists.txt with CMakeLists_wavefunction.txt (don´t forget to rename CMakeLists_wavefunction.txt to CMakeLists.txt)
+
+5. mkdir bin && cd bin
+
+6. cmake ../splitstep -DEigen3_DIR=/home/skinnewig/.eigen/share/eigen3/cmake/
+
+7. make
+
+

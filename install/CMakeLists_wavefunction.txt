@@ -1,0 +1,7 @@
+file(GLOB files
+    "*.cc"
+)
+
+add_library(Wavefunction ${files})
+target_link_libraries(Wavefunction /home/skinnewig/.fftw/lib/libfftw3.a)
+target_link_libraries(Wavefunction /home/skinnewig/.fftw/lib/libfftw3_omp.a)
